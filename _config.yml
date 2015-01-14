@@ -1,0 +1,12 @@
+# Site settings
+title: National Airport Day
+email: alan@phpizza.com
+description: >
+  National Airport Day is an amazing event that takes place each year
+  on April 15th. AirportDay.us has information and media about this
+  amazing day.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://airportday.us" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
