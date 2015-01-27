@@ -90,3 +90,4 @@ if(airportDay < Date.now()) {
 }
 
 $('.intro-text').prepend('<b>April ' + airportDay.getDate() + ', ' + airportDay.getFullYear() + '</b> &middot; ');
+$('.on-date').append(' on April ' + airportDay.getDate() + ', ' + airportDay.getFullYear());
