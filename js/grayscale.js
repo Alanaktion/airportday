@@ -83,10 +83,11 @@ function getNthDayOfMonth(index, day, month, year) {
 }
 
 // Get the next upcoming Airport Day
-var airportDay = getNthDayOfMonth(3, 2, 3);
-if(airportDay < Date.now()) {
-    var tmpDate = new Date();
-    airportDay = getNthDayOfMonth(3, 2, 3, tmpDate.getFullYear() + 1);
+var tmpDate = new Date();
+if(tmpDate.getMonth() > 3) {
+    var airportDay = getNthDayOfMonth(3, 2, 3, tmpDate.getFullYear() + 1);
+} else {
+    var airportDay = getNthDayOfMonth(3, 2, 3);
 }
 
 $('.intro-text').prepend('<b>April ' + airportDay.getDate() + ', ' + airportDay.getFullYear() + '</b> &middot; ');
